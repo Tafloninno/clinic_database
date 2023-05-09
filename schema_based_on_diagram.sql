@@ -2,7 +2,7 @@ DROP DATABASE IF EXISTS clinic;
 CREATE DATABASE clinic;
 \c clinic
 
-CREATE TABLE IF NOT EXISTS patients
+CREATE TABLE patients
 (
     id integer GENERATED ALWAYS AS IDENTITY,
     name varchar(100),
@@ -10,7 +10,7 @@ CREATE TABLE IF NOT EXISTS patients
     PRIMARY KEY(id)
 );
 
-CREATE TABLE IF NOT EXISTS medical_histories
+CREATE TABLE medical_histories
 (
     id integer GENERATED ALWAYS AS IDENTITY,
     admitted_at timestamp with time zone,
@@ -22,7 +22,7 @@ CREATE TABLE IF NOT EXISTS medical_histories
         REFERENCES patients (id)
 );
 
-CREATE TABLE IF NOT EXISTS invoices
+CREATE TABLE invoices
 (
     id integer GENERATED ALWAYS AS IDENTITY,
     total_amount integer,
@@ -43,7 +43,7 @@ CREATE TABLE IF NOT EXISTS treatments
     PRIMARY KEY(id)
 );
 
-CREATE TABLE IF NOT EXISTS invoice_items
+CREATE TABLE invoice_items
 (
     id integer GENERATED ALWAYS AS IDENTITY,
     unit_price decimal,
@@ -58,4 +58,13 @@ CREATE TABLE IF NOT EXISTS invoice_items
     CONSTRAINT treatment_constraint
         FOREIGN KEY (treatment_id)
         REFERENCES treatments (id)
+);
+
+-- Join table for medical hostories and treatments
+-- many-to-many relationship
+CREATE TABLE medical_histories_and_treatments
+(
+    medical_history_id integer,
+    treatment_id integer,
+    PRIMARY KEY(medical_history_id, treatment_id)
 );
