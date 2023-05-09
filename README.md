@@ -82,11 +82,15 @@ To run the project, you can copy queries from the given files and use them into 
 
 
 
-👤 **Author1**
+👤 **MUGISHA.I**
 
 - GitHub: [@githubhandle](https://github.com/Tafloninno)
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mugisha-innocent/)
 
+👤 **PRECIOUS.B**
+
+- GitHub: [@githubhandle](https://github.com/preciousbetine)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/preciousbetine)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -96,9 +100,8 @@ To run the project, you can copy queries from the given files and use them into 
 ## 🔭 Future Features <a name="future-features"></a>
 
 
-- [ ] **[add "join table" for visits]**
-- [ ] **[database performance audit]**
-- [ ] **[add database schema diagram]**
+- [ ] **[Medication tracking]**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -126,7 +129,7 @@ If you like this project leave star
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse community and my coding partners for the support in this project
+I would like to thank the Microverse community and my coding partner for the support in this project
 
 
 
